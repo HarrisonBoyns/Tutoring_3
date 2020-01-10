@@ -1,0 +1,90 @@
+{% extends "base.html"%}
+
+
+{% block content %}
+<body>
+
+
+  <!-- Header - set the background image for the header in the line below -->
+  <header class="py-5 bg-image-full" style="background-image: url(../static/img/bg.jpg);">
+    <div style="height: 400px;"></div>
+
+  </header>
+  <style>
+  
+	.re9-cta-wrapper{
+		background-color: #000;
+		text-align: center;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 14px;
+		font-size: 19px;
+		font-weight: 700;
+		letter-spacing: 2px;
+
+	}
+	.re9-blue-style {
+    background-color: #1073d0;	
+}
+.re9-white-btn {
+    color: #f11207;
+    background-color: #fff;
+    font-size: 19px;
+    text-transform: uppercase;
+    min-width: 220px;
+    border-radius: 0;
+    transition: all 0.5s;
+    padding: 15px 44px;
+    letter-spacing: 2px;
+}
+</style>
+  <!-- Content section -->
+  <section class="py-5">
+    <div class="container">
+      <h1>Our Mission</h1>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+    </div>
+  </section>
+
+  <!-- Image Section - set the background image for the header in the line below -->
+  <section class="py-5 bg-image-full" style="background-image: url(../static/img/brother.jpg); 
+    object-fit: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+    <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+    <div style="height: 400px;"></div>
+  </section>
+
+  <!-- Content section -->
+  <section class="py-5">
+    <div class="container">
+      <h1>Our Experience</h1>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+    </div>
+  </section>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="re9-cta-wrapper re9-blue-style">
+				<p>Would you like to join the the LearnHack team as a Hacker?</p>
+				<a href="{{ url_for('contact') }}" class="re9-white-btn" id="filter-menu"> GET IN TOUCH </a>
+			</div>
+		</div>
+	</div>
+</div>
+
+  {% endblock %}
