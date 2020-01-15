@@ -6,7 +6,7 @@ import config
 SECRET_KEY = os.urandom(32)
 
 app = Flask(__name__)
-app.config["debug"] = False
+app.config["debug"] = True
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = 'boyns12345@gmail.com'

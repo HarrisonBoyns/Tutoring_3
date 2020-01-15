@@ -13,6 +13,7 @@ def send_async_email(app, msg):
     with app.app_context():
         mail.send(msg)
 
+@app.route("/", methods=["GET"])
 @app.route("/home", methods=["GET"])
 def home():
     return render_template("scrolling.html")    
@@ -27,11 +28,11 @@ def contact():
         phone = request.form["number"]
         msg = request.form["msg"]
         msg_lst = [name, email, phone, msg]
-        msg_email = Message(subject="Lesson", sender="Boyns12345@gmail.com", recipients=["CMBboyns@hotmail.com"])
+        msg_email = Message(subject="Lesson", sender="Boyns12345@gmail.com", recipients=["cmboyns14@hotmail.com"])
         msg_email.body = msg
         mail.send(msg_email)
-        # thr = Thread(target=send_async_email, args=[app, msg])
-        # thr.start()
+        thr = Thread(target=send_async_email, args=[app, msg])
+        thr.start()
 
         flash("Thanks for the Email! We will get back to you soon!")
 

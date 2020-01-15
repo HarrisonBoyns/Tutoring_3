@@ -2,6 +2,10 @@
 
 {% extends "base.html" %}
 {% block content %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 <style>
 
 	.grid-container {
@@ -90,18 +94,14 @@
  
 	</style>
 
+	<div style="text-align:center;">
 
+	<h1>
+		Meet the Hackers
+	</h1>
 
-<div class="container">
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="re9-cta-wrapper re9-blue-style">
-				<p>Would you like to join the the LearnHack team as a Hacker?</p>
-				<a href="{{ url_for('contact') }}" class="re9-white-btn" id="filter-menu"> GET IN TOUCH </a>
-			</div>
-		</div>
 	</div>
-</div>
+
 <div class="grid-container">
 	{{ render_profile("Harrison") }}
 	{{ render_profile("Chelsea") }}
@@ -119,6 +119,18 @@
 	{{ render_profile("Neil") }}
 	{{ render_profile("Neil") }}
 
+</div>
+
+
+  <div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="re9-cta-wrapper re9-blue-style">
+				<p>Wanna Join?</p>
+				<a href="{{ url_for('contact') }}" class="re9-white-btn" id="filter-menu"> GET IN TOUCH </a>
+			</div>
+		</div>
+	</div>
 </div>
 
 
