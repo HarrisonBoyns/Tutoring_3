@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 <style>
 
+
+	.container-instructors, .container-therapies {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.container-instructors .col-sm-4.mix, .container-therapies .col-sm-4.mix {
+		float: none;
+		display: inline-block;
+		/*width:33.13%;*/
+		font-size: 0;
+		/*margin-top:25px;*/
+	}
 	.grid-container {
 	  display: grid;
 	  grid-template-columns: repeat( 3, minmax(250px, 1fr) );
@@ -100,7 +115,7 @@
 
 	</div>
 
-<div class="grid-container col s12 m6">
+<div class="container-instructors col s12 m6">
 	{{ render_profile("Harrison") }}
 	{{ render_profile("Chelsea") }}
 	{{ render_profile("James") }}
@@ -109,7 +124,6 @@
 	{{ render_profile("Ed") }}
 	{{ render_profile("Clive") }}
 	{{ render_profile("Julie") }}
-	{{ render_profile("Neil") }}
 	{{ render_profile("Neil") }}
 	{{ render_profile("Neil") }}
 	{{ render_profile("Neil") }}
