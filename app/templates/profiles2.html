@@ -3,15 +3,13 @@
 {% extends "base.html" %}
 {% block content %}
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 <style>
 
 	.grid-container {
 	  display: grid;
 	  grid-template-columns: repeat( 3, minmax(250px, 1fr) );
-	  
+	  col s12 m6
 	  padding: 10px;
 	}
 	
@@ -102,7 +100,7 @@
 
 	</div>
 
-<div class="grid-container">
+<div class="grid-container col s12 m6">
 	{{ render_profile("Harrison") }}
 	{{ render_profile("Chelsea") }}
 	{{ render_profile("James") }}
