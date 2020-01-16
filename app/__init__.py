@@ -9,8 +9,8 @@ app = Flask(__name__)
 app.config["debug"] = False
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'boyns12345@gmail.com'
-app.config['MAIL_PASSWORD'] = 'Edelman1993'
+app.config['MAIL_USERNAME'] = 'LearnHacktutoring@gmail.com'
+app.config['MAIL_PASSWORD'] = 'LearnHack14!'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -20,3 +20,5 @@ mail = Mail(app)
 
 
 from app import routes
+
+# git clone https://github.com/ClackerWhacker/Tutoring_3.git

@@ -5,11 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 	<link href="../static/css/full-width-pics.css" rel="stylesheet">  	
-	<link href="../static/css/profiles.css" rel="stylesheet">  	
-
+	<link href="../static/css/profiles.css" rel="stylesheet"> 
+	<link href="../static/css/freelancer.min.css" rel="stylesheet">
+ 	
+		<style>
+			a:link{
+				text-decoration: none;
+			}
+		</style>
 	<div>
 	<div style="text-align:center;">
-		<h1>
+		<h1 style="padding-top: 15px;">
 			Meet the Hackers
 		</h1>
 	</div>
@@ -31,6 +37,7 @@
 			{{ render_profile("Neil") }}
 			{{ render_profile("Neil") }}
 			{{ render_profile("Clyde") }}
+			
 		</div>
 	</div>
 	</div>
@@ -39,8 +46,8 @@
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="re9-cta-wrapper re9-blue-style">
-				<p>Wanna Join?</p>
-				<a href="{{ url_for('contact') }}" class="re9-white-btn" id="filter-menu"> GET IN TOUCH </a>
+				<p>Want To Get in Touch?</p>
+				<a href="{{ url_for('contact') }}" class="re9-white-btn" id="filter-menu"> CLICK HERE</a>
 			</div>
 		</div>
 	</div>
